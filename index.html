@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Little Progress</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand" id="brand">Little Progress</div>
+    <div class="row" style="flex-wrap:nowrap"><button class="theme" id="lockBtn" aria-label="Lock now" hidden>🔒</button><button class="theme" id="themeBtn" aria-label="Toggle dark mode">🌙</button></div>
+  </header>
+  <main id="view"></main>
+</div>
+<div id="lock" hidden><div class="lockbox"><div style="font-size:44px">🔒</div><h1 id="lockTitle">Welcome back</h1><p class="muted" id="lockSub">Enter your PIN to open</p>
+<input id="pinIn" type="password" inputmode="numeric" maxlength="6" placeholder="PIN" autocomplete="off"><div class="muted" id="pinMsg" style="min-height:24px;margin:6px 0"></div>
+<button class="btn" id="unlockBtn" style="width:100%">Unlock</button><div style="margin-top:14px"><button class="ghost" id="forgotBtn" style="font-size:13px">Forgot PIN?</button></div></div></div>
+<nav id="nav">
+  <a href="#home" data-p="home"><span>🏡</span>Home</a>
+  <a href="#tasks" data-p="tasks"><span>✅</span>Tasks</a>
+  <a href="#calendar" data-p="calendar"><span>Calander</span>Calendar</a>
+  <a href="#goals" data-p="goals"><span>🌱</span>Goals</a>
+  <a href="#journal" data-p="journal"><span>📖</span>Journal</a>
+  <a href="#me" data-p="me"><span>🎓</span>Me</a>
+</nav>
+
+<script src="script.js"></script>
+</body>
+</html>
